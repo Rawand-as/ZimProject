@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="test10(failed)">
+    <parameter name="expectedText" value="Roland Mendel"/>
+    <parameter name="searchText" value="Ernst Handel"/>
+    <parameter name="returnColumnText" value="2"/>
+    <parameter name="searchColumn" value="0"/>
+    <classes>
+      <class name="W3schoolTests">
+        <methods>
+          <include name="initialize"/>
+          <include name="verifyValidData" invocation-numbers="0"/>
+          <include name="downTest"/>
+        </methods>
+      </class> <!-- W3schoolTests -->
+    </classes>
+  </test> <!-- test10(failed) -->
+</suite> <!-- Failed suite [Suite] -->

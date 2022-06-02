@@ -1,0 +1,128 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test  name="test1">
+        <parameter name="searchColumn" value="2"/>
+        <parameter name="searchText" value="Helen Bennett"/>
+        <parameter name="returnColumnText" value="3"/>
+        <parameter name="expectedText" value="UK"/>
+        <classes>
+            <class name="exer2.tests.TestBase"/>
+            <class name="W3schoolTests" />
+            <methods>
+                <include name="verifyValidData"/>
+            </methods>
+        </classes>
+    </test>
+
+    <test  name="test2">
+        <parameter name="searchColumn" value="3"/>
+        <parameter name="searchText" value="Mexico"/>
+        <parameter name="returnColumnText" value="1"/>
+        <parameter name="expectedText" value="Centro comercial Moctezuma"/>
+        <classes>
+            <class name="exer2.tests.TestBase"/>
+            <class name="W3schoolTests" />
+            <methods>
+                <include name="verifyValidData"/>
+            </methods>
+        </classes>
+    </test>
+
+    <test  name="test3">
+        <parameter name="searchColumn" value="1"/>
+        <parameter name="searchText" value="Laughing Bacchus Winecellars"/>
+        <parameter name="returnColumnText" value="3"/>
+        <parameter name="expectedText" value="Canada"/>
+        <classes>
+            <class name="exer2.tests.TestBase"/>
+            <class name="W3schoolTests" />
+            <methods>
+                <include name="verifyValidData"/>
+            </methods>
+        </classes>
+    </test>
+
+    <test  name="test4">
+        <parameter name="searchColumn" value="1"/>
+        <parameter name="searchText" value="Magazzini Alimentari Riuniti"/>
+        <parameter name="returnColumnText" value="2"/>
+        <parameter name="expectedText" value="Giovanni Rovelli"/>
+        <classes>
+            <class name="exer2.tests.TestBase"/>
+            <class name="W3schoolTests" />
+            <methods>
+                <include name="verifyValidData"/>
+            </methods>
+        </classes>
+    </test>
+
+
+    <test  name="test5">
+        <parameter name="searchColumn" value="1"/>
+        <parameter name="searchText" value="Ernst Handel"/>
+        <parameter name="returnColumnText" value="2"/>
+        <parameter name="expectedText" value="Roland Mendel"/>
+        <classes>
+            <class name="exer2.tests.TestBase"/>
+            <class name="W3schoolTests" />
+            <methods>
+                <include name="verifyValidData"/>
+            </methods>
+        </classes>
+    </test>
+        <test name="test6">
+            <parameter name="searchColumn" value="1"/>
+            <parameter name="searchText" value="Magazzini Alimentari Riuniti"/>
+            <parameter name="returnColumnText" value="2"/>
+            <parameter name="expectedText" value="Roland Mendel"/>
+            <classes>
+                <class name="exer2.tests.TestBase"/>
+                <class name="W3schoolTests" />
+                <methods>
+                    <include name="VerifyInvalidData"/>
+                </methods>
+            </classes>
+        </test>
+
+    <test  name="test7">
+        <parameter name="searchColumn" value="1"/>
+        <parameter name="searchText" value="Alfreds Futterkiste"/>
+        <parameter name="returnColumnText" value="3"/>
+        <parameter name="expectedText" value="UK"/>
+        <classes>
+            <class name="exer2.tests.TestBase"/>
+            <class name="W3schoolTests" />
+            <methods>
+                <include name="VerifyInvalidData"/>
+            </methods>
+        </classes>
+    </test>
+    <test  name="test8">
+        <parameter name="searchColumn" value="0"/>
+        <parameter name="searchText" value="Alfreds Futterkiste"/>
+        <parameter name="returnColumnText" value="3"/>
+        <parameter name="expectedText" value="UK"/>
+        <classes>
+            <class name="exer2.tests.TestBase"/>
+            <class name="W3schoolTests" />
+            <methods>
+                <include name="indexOutOfBound"/>
+            </methods>
+        </classes>
+    </test>
+
+    <test  name="test9">
+        <parameter name="searchColumn" value="1"/>
+        <parameter name="searchText" value="Magazzini Alimentari Riuniti"/>
+        <parameter name="returnColumnText" value="4"/>
+        <parameter name="expectedText" value="Giovanni Rovelli"/>
+        <classes>
+            <class name="exer2.tests.TestBase"/>
+            <class name="W3schoolTests" />
+            <methods>
+                <include name="indexOutOfBound"/>
+            </methods>
+        </classes>
+    </test>
+
+</suite>
